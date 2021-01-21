@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical"
+    tools:context=".MenuPilihan">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DETAIL SERTIFIKAT"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingTop="20dp"/>
+
+    </LinearLayout>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:stretchColumns="1"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="20dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Nama Lengkap"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Handphone"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txt_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="No. Handphone"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="No. Sertifikat"
+                android:textSize="16dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_nosertifikat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Sertifikat"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Jadwal Pelaksanaan"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_jadwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Jadwal Pelaksanaan"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="right"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000"
+                android:text="Nama Perusahaan"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_perusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:text="Nama Perusahaan"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Jabatan"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_jabatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:text="Jabatan"
+                android:textSize="16dp" />
+            </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Kota Pelaksanaan"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_kota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:text="Kota Pelaksanaan"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000"
+                android:text="Info"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Info"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Motivasi"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_motivasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Motivasi"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Ket. Tambahan"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_ket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Ket. Tambahan"
+                android:textSize="16dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Status"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Terakhir Akses"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txt_akses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Terakhir Akses"
+                android:textSize="16dp" />
+        </TableRow>
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="3dp"/>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/view"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:background="@drawable/button_states"
+            android:layout_weight="1"
+            android:text="VIEW"/>
+
+    </LinearLayout>
+<!--    </androidx.core.widget.NestedScrollView>-->
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1"
+    tools:context=".View">
+    <WebView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/pbview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress1"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+            <Button
+            android:id="@+id/downloadview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_states"
+            android:text="DOWNLOAD"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+
+</RelativeLayout>
+<!--        <com.github.barteksc.pdfviewer.PDFView-->
+<!--            android:id="@+id/pdfView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:layout_editor_absoluteX="39dp"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--    </com.github.barteksc.pdfviewer.PDFView>-->
